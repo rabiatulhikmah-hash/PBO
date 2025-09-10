@@ -4,6 +4,8 @@
 
 **Nim : 2409116049**
 
+
+## Post Test 1  
 ## Sistem Pendataan Driver Grab
 Sebuah aplikasi sederhana berbasis console untuk mengelola data driver. Sistem ini memanfaatkan konsep CRUD (Create, Read, Update, Delete) di Java, dengan penyimpanan data menggunakan ArrayList. Data yang disimpan mencakup nama driver, jenis kendaraan, plat nomor, status (Aktif/Nonaktif), jumlah riwayat order, dan usia. Dengan adanya sistem ini, proses pencatatan driver jadi lebih rapi, mudah dilihat, serta bisa ditambah, diubah, atau dihapus sesuai kebutuhan.
 
@@ -31,10 +33,12 @@ Fitur update memungkinkan pengguna mengubah data yang sudah ada. Pertama, daftar
 <img width="584" height="521" alt="image" src="https://github.com/user-attachments/assets/b712541c-988c-491e-902d-1664fb2e3385" />
 
 Output :
+
 <img width="587" height="267" alt="image" src="https://github.com/user-attachments/assets/66e125bd-8279-4fa2-b32d-93d3a5b362d1" />
 
 ### 4. Hapus Driver 
 <img width="585" height="327" alt="image" src="https://github.com/user-attachments/assets/859738d4-9b94-4898-a0bd-b6eeb2dcf6ca" />
+
 Pertama, pengguna harus memilih nomor driver yang ingin dihapus. kemudian pengguna harus memberikan alasan penghapusan. Ini agar penghapusan lebih jelas, misalnya karena driver sudah berhenti atau data ganda. Setelah alasan dimasukkan, data akan terhapus dan sistem menampilkan pesan konfirmasi lengkap dengan nama driver yang dihapus. 
 
 ### 5. Keluar
