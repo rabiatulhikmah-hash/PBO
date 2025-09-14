@@ -9,41 +9,50 @@ Struktur program juga diperbarui menjadi menggunakan 3 packages untuk memisahkan
 * service → berisi logika CRUD (DriverService).
 * main → menampilkan menu interaktif untuk user.
 
+<img width="281" height="191" alt="Screenshot 2025-09-14 235838" src="https://github.com/user-attachments/assets/af400cb4-d4b6-4b06-baa4-4ae4ff8c100f" />
 
 
 ### Menu Utama
-<img width="330" height="164" alt="image" src="https://github.com/user-attachments/assets/ec3a760c-c509-4980-b1db-ec7c40c4a363" />
+<img width="274" height="168" alt="image" src="https://github.com/user-attachments/assets/5f8c13dc-7e9b-4aaf-b3af-a3611d7d116f" />
 
-Saat dijalankan, program menampilkan menu utama yang awalnya berisi lima pilihaan, menjadi enam pilihan. Yaitu : tambah driver, lihat driver, update driver, hapus driver, dan keluar.
+Saat dijalankan, program menampilkan menu utama yang awalnya berisi lima pilihaan, menjadi enam pilihan. Yaitu : tambah driver, lihat driver, update driver, hapus driver, cari driver dan keluar.
 
 
 ### 1. Tambah Driver 
-<img width="324" height="223" alt="image" src="https://github.com/user-attachments/assets/52f7ae99-7e48-4dd7-9864-1e6154f54e53" />
 
-Di fitur tambah driver, pengguna bisa memasukkan data baru dengan mengisi nama, kendaraan, plat nomor, status, riwayat order, dan usia. Untuk status, sistem memberi pilihan sederhana: 1 untuk Aktif dan 2 untuk Nonaktif. Setelah semua terisi, data langsung masuk ke daftar dan sistem menampilkan konfirmasi bahwa driver berhasil ditambahkan.
+<img width="322" height="267" alt="image" src="https://github.com/user-attachments/assets/de0926cd-e35c-496d-baf9-5db8bb8a327d" />
+
+Di fitur tambah driver, pengguna harus memasukkan data baru dengan mengisi nama, kendaraan, plat nomor, status, riwayat order, dan usia. Untuk kendaraan dan status, sistem memberi pilihan sederhana: 1 & 2 sesuai keterangan yang diberikan. Setelah semua terisi, data langsung masuk ke daftar dan sistem menampilkan konfirmasi bahwa driver berhasil ditambahkan.
 
 
 ### 2. Lihat Driver 
-<img width="618" height="288" alt="image" src="https://github.com/user-attachments/assets/7745a794-7cec-43b8-a350-07032901b6ee" />
+<img width="514" height="246" alt="image" src="https://github.com/user-attachments/assets/3a321d6b-2074-4a72-8ef7-05f2c56ffde0" />
+
 Setiap driver ditampilkan lengkap dengan informasi nama, usia, kendaraan, plat nomor, status, dan riwayat order. Daftar juga diberi nomor agar mudah dipilih saat ingin mengupdate atau menghapus data.
 
 
 ### 3. Update Driver 
 
-Fitur update memungkinkan pengguna mengubah data yang sudah ada. Pertama, daftar driver ditampilkan, lalu pengguna memilih driver berdasarkan nomornya. Setelah itu, data lama bisa diganti satu per satu, seperti nama, kendaraan, plat nomor, status, riwayat order, dan usia. Jika sudah terisi semua, sistem akan langsung menyimpan perubahan dan memberi konfirmasi bahwa data berhasil diperbarui.
+<img width="421" height="285" alt="image" src="https://github.com/user-attachments/assets/b6f6ac05-0fa3-46d3-84b6-e4d7da1a1167" />
 
-<img width="584" height="521" alt="image" src="https://github.com/user-attachments/assets/b712541c-988c-491e-902d-1664fb2e3385" />
+Fitur update memungkinkan pengguna mengubah data yang sudah ada. Pertama, daftar driver ditampilkan, lalu pengguna memilih driver berdasarkan nomornya. Setelah itu, data lama bisa diganti satu per satu, seperti nama, kendaraan, plat nomor, status, riwayat order, dan usia. Jika sudah terisi semua, sistem akan langsung menyimpan perubahan dan memberi konfirmasi bahwa data berhasil diperbarui. Disini juga saya munculkan data sebelumnya, sehingga memudahkan user untuk mengingat atau mengetahui data sebelumnya dari driver tersebut dan dapat mengganti sesuai keinginannya. user juga bisa meng enter jika tidak mau mengganti data, seperti yang saya lakukan oada nomor plat.
 
 Output :
 
-<img width="587" height="267" alt="image" src="https://github.com/user-attachments/assets/66e125bd-8279-4fa2-b32d-93d3a5b362d1" />
+<img width="513" height="247" alt="image" src="https://github.com/user-attachments/assets/b135dd89-3106-40df-9689-884a6835665b" />
 
 ### 4. Hapus Driver 
-<img width="585" height="327" alt="image" src="https://github.com/user-attachments/assets/859738d4-9b94-4898-a0bd-b6eeb2dcf6ca" />
+<img width="518" height="344" alt="image" src="https://github.com/user-attachments/assets/9cd37c0d-cfa9-4a26-bc63-9ef0feb9dc7e" />
 
-Pertama, pengguna harus memilih nomor driver yang ingin dihapus. kemudian pengguna harus memberikan alasan penghapusan. Ini agar penghapusan lebih jelas, misalnya karena driver sudah berhenti atau data ganda. Setelah alasan dimasukkan, data akan terhapus dan sistem menampilkan pesan konfirmasi lengkap dengan nama driver yang dihapus. 
+Pertama, user harus memilih nomor driver yang ingin dihapus. Setelah user memasukan nomor, data akan terhapus dan sistem menampilkan pesan konfirmasi lengkap dengan nama driver yang dihapus. 
 
-### 5. Keluar
-<img width="600" height="272" alt="image" src="https://github.com/user-attachments/assets/8de423e8-4f7c-4ae5-81b3-b4d7fc04f1a1" />
+### 5. Cari Driver (fitur baru)
+<img width="788" height="95" alt="image" src="https://github.com/user-attachments/assets/0d9516fc-8cfe-4695-8c30-d2e7dfee2b11" />
+
+jadi pada fitur ini user akan diminta untuk menginput nama atau plat nomor driver. kemudian, setelah pengguna menginput dan program menemukan data yang sama, maka akan keluar output data lengkap dari driver yang dicari tersebut.
+
+### 6. Keluar
+<img width="631" height="306" alt="image" src="https://github.com/user-attachments/assets/1cdcc202-5ca8-4d0d-9786-abbf21524cb9" />
+
 Dengan memilih menu ini penggunak akan langsung keluar dari program.
 
