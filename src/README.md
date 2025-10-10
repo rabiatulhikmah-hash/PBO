@@ -41,5 +41,26 @@ Fungsinya seperti “pusat konfigurasi” — jadi kalau nanti nama database ata
 <img width="1163" height="629" alt="Screenshot 2025-10-10 224943" src="https://github.com/user-attachments/assets/b63e2441-a65a-48c0-9449-96053f34657a" />
 
 ### 📄 DatabaseConnection.java
-Class ini digunakan untuk membuat koneksi ke MySQL menggunakan konfigurasi dari Database.java.
+Class ini digunakan untuk membuat koneksi ke MySQL menggunakan konfigurasi dari Database.java. class ini memastikan koneksi hanya dibuat satu kali dan bisa digunakan ulang di class lain seperti DriverService atau DriverORM.
 
+<img width="928" height="459" alt="image" src="https://github.com/user-attachments/assets/a10c22c6-ec12-4d89-a300-dbd92354aded" />
+
+
+## 2. Penambahan ORM (Object Relational Mapping)
+Class baru bernama DriverORM.java dibuat untuk menampilkan data dari tabel database menggunakan Statement, sekaligus menerapkan konsep ORM sederhana.
+
+📄 DriverORM.java
+
+Class ini mengambil data dari tabel driver, lalu mengubah setiap baris hasil query menjadi objek Java (Driver).
+Prosesnya:
+1. Membuat koneksi ke database.
+2. Mengambil data dari tabel menggunakan Statement.
+3. Mengubah hasil query (ResultSet) menjadi objek Driver.
+4. Menyimpan semua objek ke dalam List<Driver> dan mengembalikannya ke program utama.
+
+<img width="1419" height="786" alt="image" src="https://github.com/user-attachments/assets/d46de61c-c7da-4765-8fa0-00c4bb1cd4ba" />
+
+## 3. Integrasi ke Program Utama
+Bagian DriverService diperbarui agar menampilkan data dari ORM, bukan dari input manual lagi.
+
+<img width="748" height="360" alt="image" src="https://github.com/user-attachments/assets/b1b5a547-aa2f-4f68-b1bd-74b427b4e76a" />
