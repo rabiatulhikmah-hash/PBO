@@ -28,6 +28,7 @@ Menyimpan seluruh logika program dan proses yang berhubungan langsung dengan dat
 
 * DatabaseConnection.java → Mengatur koneksi ke database menggunakan JDBC (Java Database Connectivity). Class ini membuat dan mengembalikan objek Connection agar bisa digunakan di seluruh sistem.
 * DriverService.java → Berisi operasi CRUD (Create, Read, Update, Delete) serta fitur pencarian driver. Semua query SQL ditulis dan dijalankan melalui class ini.
+* DriverORM.java → Class tambahan yang menerapkan konsep ORM (Object Relational Mapping) sederhana. Class ini mengambil data dari tabel driver menggunakan Statement, lalu mengubah setiap baris hasil query menjadi objek Driver.
 
 ## 4. Libraries
 
